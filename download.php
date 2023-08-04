@@ -8,7 +8,7 @@ $rows = mysqli_fetch_array($result);
 
 $number = $_GET['number'];
 $filename = $_GET['file'];
-$filesize = filesize($filename);
+$filesize = filesize("/var/www/upload/".$filename);
 
 header("Content-Type: application/octet-stream");
 header("Content-Disposition: attachment; filename=$filename");
