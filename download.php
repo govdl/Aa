@@ -7,7 +7,7 @@ $result = mysqli_query($conn, $query);
 $rows = mysqli_fetch_array($result);
 
 $number = $_GET['number'];
-$filename = $_GET["file"];
+$filename = $_GET['file'];
 $filesize = filesize($filename);
 
 header("Content-Type: application/octet-stream");
