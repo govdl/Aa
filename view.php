@@ -33,7 +33,7 @@
                 <td><br><?php echo $rows['content'] ?></td>
             </tr>
             <tr>
-                <td class=file><a href="/var/www/upload/<?=$rows['file'];?>"download><?=$rows['file'];?></a></td>
+                <td><?php echo $rows['file'] ?><button a onclick="ask();">다운로드</button></td>
             </tr>
             <tr>
                 <td><p><h5>댓글목록</h5></p></td>
