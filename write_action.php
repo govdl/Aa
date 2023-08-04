@@ -11,7 +11,7 @@ $content = $_POST['content'];
 $error = $_FILES['file']['error'];
 $tmpfile = $_FILES['file']['tmp_name'];
 $filename = $_FILES['file']['name'];
-$folder = "../upload/".$filename;
+$folder = "./upload/".$filename;
 
 if($error != UPLOAD_ERR_OK){
     switch($error){
