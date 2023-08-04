@@ -17,6 +17,6 @@ header("Content-Length: $filesize");
 
 ob_clean();
 flush();
-readfile("var/www/upload/".$filename);
+readfile("/var/www/upload/".$filename);
 
 ?>
