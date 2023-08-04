@@ -33,7 +33,7 @@
                 <td><br><?php echo $rows['content'] ?></td>
             </tr>
             <tr>
-                <td><?php echo $rows['file'] ?><button class=no onclick="window.location.href='download.php?number=<?php echo $rows['number']; ?>'">다운로드</button></td>
+                <td><?php echo $rows['file'] ?><button class=no onclick="window.location.href='download.php?number=<?php echo $rows['number']; ?>&file=<?php echo $rows['file']; ?>'">다운로드</button></td>
             </tr>
             <tr>
                 <td><p><h5>댓글목록</h5></p></td>
